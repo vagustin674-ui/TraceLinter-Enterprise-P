@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraceLinter Enterprise - Análisis y Diagnóstico de Software</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="border-b border-slate-800/80 sticky top-0 bg-slate-950/85 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-extrabold text-xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">
+                TraceLinter
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-indigo-400 transition">Resumen</a>
+                <a href="#download" class="hover:text-indigo-400 transition">Descarga</a>
+                <a href="#pricing" class="hover:text-indigo-400 transition">Licencias</a>
+                <a href="#faq" class="hover:text-indigo-400 transition">FAQ</a>
+                <a href="#features" class="hover:text-indigo-400 transition">Características</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#download" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-xl transition shadow-lg shadow-indigo-500/25">
+                    Descargar Trial
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#overview" class="block text-sm text-slate-300 hover:text-indigo-400 transition">Resumen</a>
+            <a href="#download" class="block text-sm text-slate-300 hover:text-indigo-400 transition">Descarga</a>
+            <a href="#pricing" class="block text-sm text-slate-300 hover:text-indigo-400 transition">Licencias</a>
+            <a href="#faq" class="block text-sm text-slate-300 hover:text-indigo-400 transition">FAQ</a>
+            <a href="#features" class="block text-sm text-slate-300 hover:text-indigo-400 transition">Características</a>
+            <div class="pt-2">
+                <a href="#download" class="block w-full text-center bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold py-2.5 rounded-xl transition shadow-lg shadow-indigo-500/25">
+                    Descargar Trial
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-28 text-center relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-20 pointer-events-none">
+            <div class="w-[500px] h-[500px] bg-indigo-600/30 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-400 text-xs font-semibold uppercase tracking-wider shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+            Enterprise Grade Software
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto mb-6 leading-tight">
+            Optimiza y audita tus aplicaciones de escritorio con <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">TraceLinter</span>
+        </h1>
+        
+        <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            La herramienta definitiva para desarrolladores y empresas que buscan máxima calidad, análisis profundo de logs y rendimiento superior en entornos .NET.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#download" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-8 py-3.5 rounded-xl transition shadow-xl shadow-indigo-500/25 text-center flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Descargar Versión de Prueba
+            </a>
+            <a href="#overview" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-medium px-8 py-3.5 rounded-xl transition text-center flex items-center justify-center">
+                Conocer la App
+            </a>
+        </div>
+    </section>
+
+    <!-- Resumen del Sistema -->
+    <section id="overview" class="border-t border-slate-900 bg-slate-900/40 py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4 tracking-tight">¿Qué es y cómo funciona TraceLinter?</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Una visión general de cómo nuestra aplicación de escritorio se integra en tus flujos de trabajo diarios para prevenir errores críticos antes de llegar a producción.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900/80 border border-slate-800/80 p-8 rounded-2xl hover:border-indigo-500/40 transition group">
+                    <div class="w-12 h-12 bg-indigo-600/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 font-bold mb-6 group-hover:scale-110 transition">01</div>
+                    <h3 class="font-semibold text-lg mb-3 text-white">Diagnóstico Automatizado</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Escanea los registros de ejecución y código de tus aplicaciones locales para detectar patrones de fallos y cuellos de botella en segundos.</p>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800/80 p-8 rounded-2xl hover:border-indigo-500/40 transition group">
+                    <div class="w-12 h-12 bg-indigo-600/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 font-bold mb-6 group-hover:scale-110 transition">02</div>
+                    <h3 class="font-semibold text-lg mb-3 text-white">Entorno Seguro y Blindado</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Diseñado bajo estrictos estándares de protección de código, garantizando que la propiedad intelectual de tu empresa permanezca intacta.</p>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800/80 p-8 rounded-2xl hover:border-indigo-500/40 transition group">
+                    <div class="w-12 h-12 bg-indigo-600/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 font-bold mb-6 group-hover:scale-110 transition">03</div>
+                    <h3 class="font-semibold text-lg mb-3 text-white">Integración sin Fricciones</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Funciona de manera independiente como una potente utilidad autoejecutable en Windows, sin requerir instalaciones complejas de dependencias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div class="bg-gradient-to-b from-indigo-950/40 to-slate-900/60 border border-indigo-500/30 p-10 sm:p-14 rounded-3xl shadow-2xl relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1 rounded-full">
+                Descarga Directa
+            </div>
+            <h2 class="text-3xl font-bold mb-4">Comienza a usar TraceLinter hoy</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto text-sm sm:text-base">Descarga el paquete autoejecutable para Windows (x64) y pruébalo de inmediato en tus proyectos.</p>
+            
+            <a href="https://github.com/vagustin674-ui/TraceLinter-Enterprise-P/releases/download/v1.0.0/TraceLinter-Entrega.zip" download class="inline-flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl transition shadow-xl shadow-indigo-500/25">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Descargar TraceLinter-Entrega.zip (v1.0)
+            </a>
+            <p class="text-xs text-slate-500 mt-4">Requiere Windows 10/11 (Self-contained, no necesita .NET instalado).</p>
+        </div>
+    </section>
+
+    <!-- Pricing / Licensing Section -->
+    <section id="pricing" class="border-t border-slate-900 py-24">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 tracking-tight">Planes y Licenciamiento Comercial</h2>
+            <p class="text-slate-400 mb-16 max-w-2xl mx-auto text-sm sm:text-base">Haz clic en el paquete o plan que prefieras para seleccionarlo y proceder al pago con tarjeta internacional.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                
+                <!-- Columna 1: Licencias Individuales -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-400 font-semibold text-xs uppercase tracking-wider mb-2">Licencia Individual</div>
+                        <h3 class="text-2xl font-bold mb-6">Para Desarrolladores y Freelancers</h3>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div onclick="selectPlan(this, 'Licencia Individual - 1 Mes', '$19 USD')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition">
+                                <span class="text-sm font-medium">1 Mes</span>
+                                <span class="font-bold text-indigo-400">$19 USD</span>
+                            </div>
+                            <div onclick="selectPlan(this, 'Licencia Individual - 3 Meses', '$49 USD')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition">
+                                <span class="text-sm font-medium">3 Meses (Trimestral)</span>
+                                <span class="font-bold text-indigo-400">$49 USD</span>
+                            </div>
+                            <div onclick="selectPlan(this, 'Licencia Individual - 6 Meses', '$89 USD')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition">
+                                <span class="text-sm font-medium">6 Meses (Semestral)</span>
+                                <span class="font-bold text-indigo-400">$89 USD</span>
+                            </div>
+                            <div onclick="selectPlan(this, 'Licencia Individual - 12 Meses Anual', '$99 USD / año')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-indigo-950/30 rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition">
+                                <div>
+                                    <span class="text-sm font-medium block">12 Meses (Anual)</span>
+                                    <span class="text-[10px] text-indigo-300 font-semibold">¡La opción más popular!</span>
+                                </div>
+                                <span class="font-bold text-indigo-400">$99 USD / año</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Packs para Equipos -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative">
+                    <div class="absolute -top-3 right-8 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                        Empresas
+                    </div>
+                    <div>
+                        <div class="text-indigo-400 font-semibold text-xs uppercase tracking-wider mb-2">Packs Corporativos</div>
+                        <h3 class="text-2xl font-bold mb-6">Para Equipos y Software Factories</h3>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div onclick="selectPlan(this, 'Pack Team (Hasta 5 licencias)', '$79 USD')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition">
+                                <div>
+                                    <span class="text-sm font-medium block">Pack Team (Hasta 5 licencias)</span>
+                                    <span class="text-[10px] text-slate-400">Duración: 1 Mes</span>
+                                </div>
+                                <span class="font-bold text-indigo-400">$79 USD</span>
+                            </div>
+                            <div onclick="selectPlan(this, 'Pack Enterprise (Hasta 10 licencias)', '$149 USD')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-slate-950/60 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition">
+                                <div>
+                                    <span class="text-sm font-medium block">Pack Enterprise (Hasta 10 licencias)</span>
+                                    <span class="text-[10px] text-slate-400">Duración: 1 Mes</span>
+                                </div>
+                                <span class="font-bold text-indigo-400">$149 USD</span>
+                            </div>
+                            <div onclick="selectPlan(this, 'Pack Enterprise Anual (Hasta 10 licencias)', '$799 USD / año')" 
+                                 class="plan-option cursor-pointer flex justify-between items-center p-3.5 bg-indigo-950/30 rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition">
+                                <div>
+                                    <span class="text-sm font-medium block">Pack Enterprise Anual (Hasta 10 licencias)</span>
+                                    <span class="text-[10px] text-indigo-300 font-semibold">Ahorro corporativo total</span>
+                                </div>
+                                <span class="font-bold text-indigo-400">$799 USD / año</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Panel Flotante de Selección con Stripe -->
+            <div id="selection-box" class="mt-10 max-w-2xl mx-auto bg-indigo-950/60 border border-indigo-500/40 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 transition-all duration-300">
+                <div class="text-left w-full">
+                    <span class="text-xs text-indigo-300 uppercase tracking-wider font-semibold block">Plan Seleccionado:</span>
+                    <span id="selected-plan-name" class="text-lg font-bold text-white">Ningún plan seleccionado</span>
+                    <span id="selected-plan-price" class="text-indigo-400 text-sm font-semibold block">Haz clic arriba para elegir una opción</span>
+                </div>
+                <button id="checkout-btn" onclick="payWithStripe()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-500/20 text-center opacity-50 pointer-events-none whitespace-nowrap">
+                    Pagar con Stripe 🌍
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 TraceLinter Enterprise. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        let currentPlanName = "";
+        let currentPlanPrice = "";
+
+        function selectPlan(element, name, price) {
+            document.querySelectorAll('.plan-option').forEach(opt => {
+                opt.classList.remove('border-indigo-500', 'bg-indigo-950/50', 'ring-2', 'ring-indigo-500/50');
+            });
+
+            element.classList.add('border-indigo-500', 'bg-indigo-950/50', 'ring-2', 'ring-indigo-500/50');
+
+            currentPlanName = name;
+            currentPlanPrice = price;
+
+            document.getElementById('selected-plan-name').innerText = name;
+            document.getElementById('selected-plan-price').innerText = `Precio: ${price}`;
+
+            const checkoutBtn = document.getElementById('checkout-btn');
+            checkoutBtn.classList.remove('opacity-50', 'pointer-events-none');
+        }
+
+        function payWithStripe() {
+            if (!currentPlanName) return;
+            alert(`Redirigiendo a Stripe para adquirir: ${currentPlanName} (${currentPlanPrice})`);
+        }
+    </script>
+</body>
+</html>
