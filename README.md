@@ -21,7 +21,7 @@
 
 <p align="center">
   <img src="./TreceLinter-Demo.gif" alt="TraceLinter Enterprise Demo" width="100%">
-</p>
+</p
 
 ---
 
