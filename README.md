@@ -20,7 +20,7 @@
 ## 🎬 See TraceLinter in Action
 
 <p align="center">
-  <video src="./assets/TreceLinter Exp.mp4" width="100%" autoplay loop muted playsinline></video>
+  <video width="100%" src="./TreceLinter Exp.mp4" autoplay loop muted playsinline></video>
 </p>
 
 ---
