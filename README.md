@@ -20,7 +20,7 @@
 ## 🎬 See TraceLinter in Action
 
 <p align="center">
-  <img src="docs/tracelinter-demo.gif" alt="TraceLinter Desktop Demo" width="100%"/>
+  <video src="docs/TreceLinter Exp.mp4" width="100%" autoplay loop muted playsinline></video>
 </p>
 
 ---
@@ -58,8 +58,7 @@ Add this step to your `.github/workflows/tracelinter-ci.yml` file:
 ```yaml
 - name: ⚡ Run TraceLinter CLI Audit
   run: dotnet run --project TraceLinter.Cli/TraceLinter.Cli.csproj -- --src ./ --sarif-out results.sarif
-
-### 3. How do I configure custom rules for my enterprise?
+3. How do I configure custom rules for my enterprise?
 Place a .tracelinter.json file in the root of your Git repository to define custom criticality thresholds and ignored directories (such as /migrations/ or /obj/) without manual setup.
 
 🏗️ Solution Architecture
