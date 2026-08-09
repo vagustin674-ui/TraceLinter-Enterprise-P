@@ -17,14 +17,6 @@
 
 ---
 
-## 🎬 See TraceLinter in Action
-
-<p align="center">
-  <img src="./TreceLinter-Demo.gif" alt="TraceLinter Enterprise Demo" width="100%">
-</p>
-
----
-
 ## 📌 Overview
 
 **TraceLinter Enterprise** bridges the gap between **Static Code Analysis** (Roslyn AST) and **Runtime Telemetry** (OpenTelemetry OTLP). Instead of warning about theoretical code smells, TraceLinter identifies performance bottlenecks and vulnerabilities that actually impact production based on real execution metrics (RPM, P95 Latency). 
