@@ -76,3 +76,13 @@ This project is proprietary software distributed under a commercial enterprise l
 ✅ Licensed Use: Access, execution, and updates require a valid commercial license key obtained through official channels (Lemon Squeezy Store).
 
 ❌ Restrictions: Unauthorized distribution, modification, reverse engineering for redistribution, or commercial resale of this software (or parts of it) without an active enterprise license is strictly prohibited.
+
+
+### Pasos rápidos para aplicarlo:
+1. Reemplazá el contenido de tu archivo `README.md` con este bloque.
+2. Ejecutá en tu terminal:
+   ```bash
+   git add README.md
+   git commit -m "docs: fix markdown syntax and update demo gif display"
+   git push origin main
+¡Listo! Ahora tu repositorio lucirá impecable y con el video reproduciéndose de manera fluida en la página principal. 🚀
