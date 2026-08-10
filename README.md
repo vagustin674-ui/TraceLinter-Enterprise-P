@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="TraceLinter Logo" width="180"/>
+  <img src="./assets/app.jpg" alt="TraceLinter Logo" width="180"/>
 </p>
 
 <h1 align="center">TraceLinter Enterprise 🛡️⚡</h1>
@@ -21,14 +21,6 @@
 
 <p align="center">
   <img src="./assets/TreceLinter-Demo.gif" alt="TraceLinter Enterprise Demo" width="100%">
-</p>
-
----
-
-## 🖼️ Interface Preview
-
-<p align="center">
-  <img src="./assets/app.jpg" alt="TraceLinter Enterprise UI" width="100%">
 </p>
 
 ---
